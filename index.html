@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+    <!-- mozactionhint
+        autocomplete
+        
+     -->
+    <div class="container">
+        <form class="form-product" action="/product.php">
+            <fieldset class="form-product-fieldset">
+                <legend class="form-product-legend">Buy Product</legend>
+                <div class="form-product-main">
+                    <div class="form-product-about">
+                        <div class="form-product-wrapper">
+                            <label for="userName">Enter your name</label>
+                            <input id="userName" maxlength="20" type="text" placeholder="Your name here">
+                        </div>
+                        <div class="form-product-wrapper">
+                            <label for="userLocation" >Enter your location</label>
+                            <input id="userLocation"  maxlength="40"type="text" placeholder="Your city here">
+                        </div>
+                        <div class="form-product-wrapper">
+                            <label for="userEmail" >Enter your eMail</label>
+                            <input id="userEmail"  maxlength="40" type="text" placeholder="Your Email here">
+                        </div>
+                        <div class="form-product-wrapper">
+                            <label for="phone">Phone Number</label>
+                            <input id="phone"  maxlength="15" type="tel." placeholder="Your phone number here">
+                        </div>
+                        <div class="form-product-bot">
+                            <input id="bot" type="checkbox">
+                            <label for="bot">If you are not a robot</label>
+                        </div>
+                    </div>
+                    <div class="form-product-about">
+                        <div class="form-product-wrapper">
+                            <label for="productNumber">Select number</label>
+                            <input id="productNumber" type="number">
+                        </div>
+                       <div class="form-product-color">
+                            <label for="productColor">Choose color</label>
+                            <input id="productColor" type="color">
+                       </div>
+                        
+                        <div class="form-product-size">
+                            <h3>Size</h3>
+                            <input name="size" id="small" type="radio">
+                            <label for="small">Small</label>
+                            <input name="size" id="normal" type="radio">
+                            <label for="normal">Normal</label>
+                            <input name="size" id="big" type="radio">
+                            <label for="big">Big</label>
+                            
+                        </div>
+                    </div>
+                </div>
+                <button class="form-product-btn" type="submit">submit</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
